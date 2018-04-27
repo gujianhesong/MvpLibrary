@@ -6,12 +6,12 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.PagerTitleStrip;
 import android.support.v4.view.ViewPager;
-import com.pinery.libmvp.ui.BaseActivity;
+import com.pinery.libmvp.ui.BaseMvpActivity;
 import com.pinery.mvp.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FragmentActivity extends BaseActivity {
+public class FragmentActivity extends BaseMvpActivity {
 
   private ViewPager viewPager;
   private PagerTitleStrip titleStrip;

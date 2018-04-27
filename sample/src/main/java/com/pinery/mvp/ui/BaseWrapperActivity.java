@@ -3,7 +3,7 @@ package com.pinery.mvp.ui;
 import android.app.ProgressDialog;
 import com.pinery.libmvp.model.BaseModel;
 import com.pinery.libmvp.presenter.BasePresenter;
-import com.pinery.libmvp.ui.BaseActivity;
+import com.pinery.libmvp.ui.BaseMvpActivity;
 
 /**
  * 包装后的BaseActivity，提供更多方法接口
@@ -11,7 +11,8 @@ import com.pinery.libmvp.ui.BaseActivity;
  * Created by hesong on 2017/9/28.
  */
 
-public abstract class BaseWrapperActivity<P extends BasePresenter, M extends BaseModel> extends BaseActivity<P, M> {
+public abstract class BaseWrapperActivity<P extends BasePresenter, M extends BaseModel> extends
+    BaseMvpActivity<P, M> {
 
   private ProgressDialog mProgressDialog;
 

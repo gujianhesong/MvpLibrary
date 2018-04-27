@@ -6,7 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.annotation.StyleRes;
 import android.view.View;
 import android.widget.TextView;
-import com.pinery.libmvp.ui.BaseDialog;
+import com.pinery.libmvp.ui.BaseMvpDialog;
 import com.pinery.mvp.R;
 import com.pinery.mvp.constract.MainConstract;
 import com.pinery.mvp.model.MainModel;
@@ -18,7 +18,7 @@ import com.pinery.mvp.presenter.MainPresenter;
  * Created by hesong on 2017/9/28.
  */
 
-public class MainDialog extends BaseDialog<MainPresenter, MainModel> implements MainConstract.View{
+public class MainDialog extends BaseMvpDialog<MainPresenter, MainModel> implements MainConstract.View{
 
   private TextView tvContent;
 

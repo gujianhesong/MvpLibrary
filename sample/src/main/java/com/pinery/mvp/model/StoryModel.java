@@ -10,6 +10,9 @@ import com.pinery.mvp.request.JokeService;
 import java.util.concurrent.TimeUnit;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -70,6 +73,18 @@ public class StoryModel implements StoryConstract.Model {
             callBack.onFailure(throwable);
           }
         });
+
+    apiService.requestJoke2(1, 30, STRORY_APP_KEY)
+        .enqueue(new Callback<Joke>() {
+          @Override public void onResponse(Call<Joke> call, Response<Joke> response) {
+
+          }
+
+          @Override public void onFailure(Call<Joke> call, Throwable t) {
+
+          }
+        });
+
 
   }
 

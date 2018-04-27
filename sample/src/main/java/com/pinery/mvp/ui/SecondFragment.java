@@ -2,13 +2,10 @@ package com.pinery.mvp.ui;
 
 import android.view.View;
 import android.widget.TextView;
-import com.pinery.libmvp.ui.BaseFragment;
+import com.pinery.libmvp.ui.BaseMvpFragment;
 import com.pinery.mvp.R;
-import com.pinery.mvp.constract.FirstConstract;
 import com.pinery.mvp.constract.SecondConstract;
-import com.pinery.mvp.model.FirstModel;
 import com.pinery.mvp.model.SecondModel;
-import com.pinery.mvp.presenter.FirstPresenter;
 import com.pinery.mvp.presenter.SecondPresenter;
 
 /**
@@ -17,7 +14,7 @@ import com.pinery.mvp.presenter.SecondPresenter;
  * Created by hesong on 2017/9/28.
  */
 
-public class SecondFragment extends BaseFragment<SecondPresenter, SecondModel> implements
+public class SecondFragment extends BaseMvpFragment<SecondPresenter, SecondModel> implements
     SecondConstract.View{
 
   private TextView tvContent;

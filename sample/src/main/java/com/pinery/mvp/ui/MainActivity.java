@@ -5,7 +5,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
-import com.pinery.libmvp.ui.BaseActivity;
+import com.orhanobut.logger.Logger;
+import com.pinery.libmvp.ui.BaseMvpActivity;
 import com.pinery.mvp.R;
 import com.pinery.mvp.constract.MainConstract;
 import com.pinery.mvp.model.MainModel;
@@ -17,7 +18,7 @@ import com.pinery.mvp.presenter.MainPresenter;
  * Created by hesong on 2017/9/28.
  */
 
-public class MainActivity extends BaseActivity<MainPresenter, MainModel> implements
+public class MainActivity extends BaseMvpActivity<MainPresenter, MainModel> implements
     MainConstract.View{
 
   private Button btnGoStory, btnGoFragment, btnDialog, btnViewProxy;

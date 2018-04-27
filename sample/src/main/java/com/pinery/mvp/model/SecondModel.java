@@ -1,8 +1,7 @@
 package com.pinery.mvp.model;
 
 import com.pinery.libmvp.callback.ModelCallBack;
-import com.pinery.mvp.MvpApp;
-import com.pinery.mvp.constract.FirstConstract;
+import com.pinery.mvp.App;
 import com.pinery.mvp.constract.SecondConstract;
 import java.io.IOException;
 import okhttp3.Call;
@@ -31,7 +30,7 @@ public class SecondModel implements SecondConstract.Model {
 
       @Override public void onResponse(Call call, Response response) throws IOException {
         final String content = response.body().string();
-        MvpApp.getInstance().mHandler.post(new Runnable() {
+        App.getInstance().mHandler.post(new Runnable() {
           @Override public void run() {
 
             callBack.onSuccess(content);

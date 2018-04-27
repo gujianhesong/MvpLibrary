@@ -2,7 +2,7 @@ package com.pinery.mvp.ui;
 
 import android.view.View;
 import android.widget.TextView;
-import com.pinery.libmvp.ui.BaseFragment;
+import com.pinery.libmvp.ui.BaseMvpFragment;
 import com.pinery.mvp.R;
 import com.pinery.mvp.constract.FirstConstract;
 import com.pinery.mvp.model.FirstModel;
@@ -14,7 +14,7 @@ import com.pinery.mvp.presenter.FirstPresenter;
  * Created by hesong on 2017/9/28.
  */
 
-public class FirstFragment extends BaseFragment<FirstPresenter, FirstModel> implements
+public class FirstFragment extends BaseMvpFragment<FirstPresenter, FirstModel> implements
     FirstConstract.View{
 
   private TextView tvContent;
